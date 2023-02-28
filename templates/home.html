@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="https://kit.fontawesome.com/97ea2aad21.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="my">
+    <h1>Search for your favourite&nbsp;<span class="auto-type"></span></h1>
+</div>
+<div class="container">
+  <form action="/review" method="POST">
+  <i class="fas fa-search"></i>
+  <input type="text" placeholder="Search.." name="content">
+  <button type="submit">Search</button>
+</form>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+  var typed = new Typed(".auto-type",{strings:["mobiles","electronics","fashion","and many more"],typeSpeed:100,backSpeed:100,loop:true})
+</script>
+
+
+
+</body>
+</html> 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link rel="stylesheet" href="./new.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='new.css') }}">
+
+</head>
+<body>
+  <table class="content-table">
+    <thead>
+      <tr>
+        <td>Image</td>
+        <td colspan="3">Price</td>
+        <td>Ratings(5)</td>
+        <td>Reviews</td>
+        <td>Product Link</td>
+      </tr>
+    <tbody>
+        {% for i in range(x) %}
+      <tr>
+            <td><img src={{images[i]}} alt="Italian Trulli" width="200" height="200"></td>
+            <td>{{prices[i]["New Price"]}}</td>
+            <td><s>{{prices[i]["Original Price"]}}</s></td>
+            <td>{{prices[i]["Discount"]}}</td>
+            <td>{{overall[i]}}</td>
+            <td>
+            {% for j in range(review[i] | length ) %}
+            {{j+1}}{{")"}} {{review[i][j]["Comment"]}}
+            <br>
+            
+          {% endfor %}
+        </td>
+        <td><a href={{link[i]}} target="_blank">Click here to visit product</a></td>
+        {% endfor %}
+      </tr>
+    </tbody>
+    </thead>
+  </table>
+
+
+</body>
+</html>

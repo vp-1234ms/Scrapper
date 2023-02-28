@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+body{
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://img.freepik.com/free-photo/robot-handshake-human-background-futuristic-digital-age_53876-129770.jpg?size=626&ext=jpg&ga=GA1.2.1975395608.1677593047");
+  /* background:#060606;  */
+}
+.my{
+ 
+  color:#fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.my h1{
+  font-size: 4em;
+  font-weight: 400;
+  
+}
+.my span{
+  color: red;
+}
+.container{
+  width:100%;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
+}
+form{
+  background:#fff;
+  width:55em;
+  height:4em;
+  display:flex;
+
+}
+form input{
+  flex:1;
+  border:none;
+  outline:none;
+  font-size: 1.5em;
+
+}
+form button{
+  background:tomato;
+  padding:1em 4em;
+  border:none;
+  outline:none;
+  color:#fff;
+  letter-spacing:0.02em;
+  cursor:pointer;
+  font-size: 1em;
+
+}
+form .fa-search{
+  align-self:center;
+  padding:2em 2em;
+  color:#777;
+
+}
+ 
+@media screen  and (max-width=600px){
+  .my h1{
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+  }
+  form .fa-search{
+    align-self:center;
+  }
+
+}
+  
+
+
