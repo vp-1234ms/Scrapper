@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen
 import urllib.request
-from flask import Flask,request,render_template,redirect
+from flask import Flask,request,render_template,redirect,app
 from flask_cors import CORS,cross_origin
 import pymongo
 
